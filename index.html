@@ -254,6 +254,34 @@
     font-size: 10px; opacity: 0.4;
     letter-spacing: 1px; line-height: 2;
   }
+  .forfaits-deplacement {
+    margin-top: 60px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 40px;
+    max-width: 560px;
+  }
+  .deplacement-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px; letter-spacing: 2px;
+    color: var(--accent); margin-bottom: 20px;
+  }
+  .deplacement-list {
+    list-style: none; font-size: 12px; opacity: 0.6; line-height: 2.4;
+  }
+  .deplacement-list li { padding-left: 14px; position: relative; }
+  .deplacement-list li::before {
+    content: '—'; position: absolute; left: 0;
+    color: var(--accent); font-size: 10px;
+  }
+  .forfaits-note {
+    margin-top: 40px;
+    max-width: 600px;
+    font-size: 11px; opacity: 0.45; line-height: 2;
+    border-left: 2px solid var(--accent);
+    padding-left: 20px;
+  }
+  .forfaits-note p { margin-bottom: 10px; }
+  .forfaits-note strong { color: var(--white); opacity: 1; }
 
   /* SPORTS */
   .sports-strip {
@@ -531,76 +559,105 @@
 <!-- FORFAITS -->
 <section id="forfaits">
   <p class="section-label">Tarifs</p>
-  <h2 class="section-title">Forfaits</h2>
-  <p class="forfaits-intro">Le prix est établi selon le temps de jeu réel de l'athlète — toujours juste pour les parents et les équipes.</p>
+  <h2 class="section-title">Forfaits 2026</h2>
+  <p class="forfaits-intro">Toutes les meilleures images réussies — soigneusement sélectionnées et éditées avec attention. Qualité avant quantité.</p>
 
   <div class="forfaits-grid">
 
-    <div class="forfait-card">
-      <p class="forfait-badge">Athlète Individuel</p>
-      <h3 class="forfait-name">Mini</h3>
-      <div class="forfait-price">50 $<span> / match</span></div>
+    <div class="forfait-card featured">
+      <p class="forfait-badge">⭐ Athlète — Express</p>
+      <h3 class="forfait-name">Express</h3>
+      <div class="forfait-price">95 $</div>
       <div class="forfait-divider"></div>
       <ul class="forfait-details">
-        <li>Remplaçant / peu de temps de jeu</li>
-        <li>1h maximum sur le terrain</li>
-        <li>5–8 photos éditées livrées</li>
+        <li>Jusqu'à 45 minutes de couverture</li>
+        <li>Suivi de l'athlète pendant la période couverte</li>
+        <li>Édition professionnelle des images</li>
+        <li>Galerie privée en ligne</li>
+        <li>Téléchargement en haute résolution</li>
       </ul>
-      <p class="forfait-extra">+ 5 $/photo extra &nbsp;·&nbsp; + 25 $ rush 48h</p>
+      <p class="forfait-extra">+ 25 $ livraison express (48 h)</p>
     </div>
 
     <div class="forfait-card featured">
-      <p class="forfait-badge">⭐ Athlète Individuel</p>
-      <h3 class="forfait-name">Demi-match</h3>
-      <div class="forfait-price">75 $<span> / match</span></div>
+      <p class="forfait-badge">⭐ Athlète — Signature</p>
+      <h3 class="forfait-name">Signature</h3>
+      <div class="forfait-price">175 $</div>
       <div class="forfait-divider"></div>
       <ul class="forfait-details">
-        <li>Joue environ la moitié du match</li>
-        <li>Temps de jeu modéré</li>
-        <li>10–12 photos éditées livrées</li>
+        <li>Couverture complète du match</li>
+        <li>Échauffement (si possible)</li>
+        <li>Suivi de l'athlète pendant toute la rencontre</li>
+        <li>Édition professionnelle des images</li>
+        <li>Galerie privée en ligne</li>
+        <li>Téléchargement en haute résolution</li>
       </ul>
-      <p class="forfait-extra">+ 5 $/photo extra &nbsp;·&nbsp; + 25 $ rush 48h</p>
-    </div>
-
-    <div class="forfait-card featured">
-      <p class="forfait-badge">⭐ Athlète Individuel</p>
-      <h3 class="forfait-name">Match Complet</h3>
-      <div class="forfait-price">100 $<span> / match</span></div>
-      <div class="forfait-divider"></div>
-      <ul class="forfait-details">
-        <li>Partant — joue la majorité du match</li>
-        <li>Durée complète couverte</li>
-        <li>15–20 photos éditées livrées</li>
-      </ul>
-      <p class="forfait-extra">+ 5 $/photo extra &nbsp;·&nbsp; + 25 $ rush 48h</p>
+      <p class="forfait-extra">+ 25 $ livraison express (48 h)</p>
     </div>
 
     <div class="forfait-card">
-      <p class="forfait-badge">Équipe</p>
-      <h3 class="forfait-name">Forfait Équipe</h3>
-      <div class="forfait-price">150 $<span> / séance</span></div>
+      <p class="forfait-badge">👥 Équipe — Match</p>
+      <h3 class="forfait-name">Match</h3>
+      <div class="forfait-price">295 $</div>
       <div class="forfait-divider"></div>
       <ul class="forfait-details">
-        <li>Match ou entraînement (1–2h)</li>
-        <li>30–50 photos éditées livrées</li>
-        <li>Galerie en ligne privée</li>
+        <li>Couverture complète du match</li>
+        <li>Photos individuelles et d'équipe en action</li>
+        <li>Moments d'équipe, célébrations et émotions</li>
+        <li>Édition professionnelle des images</li>
+        <li>Galerie privée en ligne</li>
+        <li>Téléchargement en haute résolution</li>
       </ul>
-      <p class="forfait-extra">+ 8 $/photo extra &nbsp;·&nbsp; + 50 $ droits commerciaux</p>
+      <p class="forfait-extra">+ 50 $ livraison express (48 h) &nbsp;·&nbsp; + 100 $ licence commerciale</p>
     </div>
 
     <div class="forfait-card">
-      <p class="forfait-badge">Tournoi</p>
-      <h3 class="forfait-name">Forfait Tournoi</h3>
-      <div class="forfait-price">350 $<span> / journée</span></div>
+      <p class="forfait-badge">🏆 Tournoi — Demi-journée</p>
+      <h3 class="forfait-name">Demi-journée</h3>
+      <div class="forfait-price">495 $</div>
       <div class="forfait-divider"></div>
       <ul class="forfait-details">
-        <li>Journée complète (4–8h)</li>
-        <li>Plusieurs matchs couverts</li>
-        <li>80–150 photos éditées livrées</li>
+        <li>Jusqu'à 4 heures de présence</li>
+        <li>Plusieurs matchs selon l'horaire</li>
+        <li>Couverture de l'équipe tout au long de la période réservée</li>
+        <li>Édition professionnelle des images</li>
+        <li>Galerie privée en ligne</li>
+        <li>Téléchargement en haute résolution</li>
       </ul>
-      <p class="forfait-extra">+ 25 $ rush 48h &nbsp;·&nbsp; + 100 $ droits commerciaux</p>
+      <p class="forfait-extra">+ 75 $ livraison express (48 h) &nbsp;·&nbsp; + 100 $ licence commerciale</p>
     </div>
 
+    <div class="forfait-card">
+      <p class="forfait-badge">🏆 Tournoi — Journée complète</p>
+      <h3 class="forfait-name">Journée Complète</h3>
+      <div class="forfait-price">795 $</div>
+      <div class="forfait-divider"></div>
+      <ul class="forfait-details">
+        <li>Jusqu'à 8 heures de présence</li>
+        <li>Plusieurs matchs selon l'horaire</li>
+        <li>Photos d'action, d'équipe, d'ambiance et de célébration</li>
+        <li>Édition professionnelle des images</li>
+        <li>Galerie privée en ligne</li>
+        <li>Téléchargement en haute résolution</li>
+      </ul>
+      <p class="forfait-extra">+ 100 $ livraison express (48 h) &nbsp;·&nbsp; + 100 $ licence commerciale</p>
+    </div>
+
+  </div>
+
+  <div class="forfaits-deplacement">
+    <h3 class="deplacement-title">Déplacement</h3>
+    <ul class="deplacement-list">
+      <li><strong>Jusqu'à 25 km</strong> — inclus</li>
+      <li><strong>25 à 50 km</strong> — +25 $</li>
+      <li><strong>50 à 100 km</strong> — +50 $</li>
+      <li><strong>Plus de 100 km</strong> — 0,70 $/km (aller-retour) ou soumission personnalisée</li>
+    </ul>
+  </div>
+
+  <div class="forfaits-note">
+    <p>Le nombre de photos livrées varie naturellement selon le déroulement du match, le temps de jeu, les occasions photographiables et la durée de la couverture.</p>
+    <p>Mon engagement est simple : <strong>vous recevrez toutes les meilleures images réussies</strong>, soigneusement sélectionnées et éditées avec attention. Mon objectif est toujours de privilégier la qualité des souvenirs plutôt qu'une quantité prédéterminée.</p>
   </div>
 
   <div class="sports-strip">
@@ -904,15 +961,13 @@ function handleQuizSubmit(e) {
     const ev = answers.evenement, t = answers.type, tp = answers.tempsjeu;
     let titre, forfait, prix;
     if (ev === 'Tournoi') {
-      titre = "C'est un match parfait!"; forfait = 'Forfait Tournoi'; prix = '350 $';
+      titre = "C'est un match parfait!"; forfait = 'Tournoi — Demi-journée'; prix = '495 $';
     } else if (t === 'Équipe') {
-      titre = 'On est compatibles!'; forfait = 'Forfait Équipe'; prix = '150 $';
-    } else if (tp === 'Peu de temps — remplaçant') {
-      titre = 'On est compatibles!'; forfait = 'Individuel Mini'; prix = '50 $';
-    } else if (tp === 'Environ la moitié du match') {
-      titre = "C'est un match parfait!"; forfait = 'Individuel Demi-match'; prix = '75 $';
+      titre = 'On est compatibles!'; forfait = 'Équipe — Match'; prix = '295 $';
+    } else if (tp === 'Peu de temps — remplaçant' || tp === 'Environ la moitié du match') {
+      titre = 'On est compatibles!'; forfait = 'Athlète — Express'; prix = '95 $';
     } else {
-      titre = "C'est un match parfait!"; forfait = 'Individuel Match Complet'; prix = '100 $';
+      titre = "C'est un match parfait!"; forfait = 'Athlète — Signature'; prix = '175 $';
     }
     document.getElementById('hidden-resultat').value = titre + ' — ' + forfait + ' — ' + prix;
   })();
@@ -956,34 +1011,29 @@ function showResult() {
 
   if (evenement === 'Tournoi') {
     titre = "C'est un match parfait!";
-    forfait = 'Forfait Tournoi';
-    prix = '350 $';
-    details = ['Journée complète couverte (4–8h)', 'Plusieurs matchs photographiés', '80–150 photos éditées livrées', 'Galerie en ligne privée'];
-    if (attente === 'Usage commercial / commanditaires') details.push('+100 $ droits commerciaux à prévoir');
+    forfait = 'Tournoi — Demi-journée';
+    prix = '495 $';
+    details = ["Jusqu'à 4 heures de présence", 'Plusieurs matchs selon l\'horaire', 'Galerie privée en ligne', 'Téléchargement en haute résolution'];
+    if (attente === 'Usage commercial / commanditaires') details.push('+100 $ licence commerciale');
   } else if (type === 'Équipe') {
     titre = 'On est compatibles!';
-    forfait = 'Forfait Équipe';
-    prix = '150 $';
-    details = ['Match ou entraînement (1–2h)', '30–50 photos éditées livrées', 'Galerie en ligne privée', "Toute l'équipe couverte"];
-    if (attente === 'Usage commercial / commanditaires') details.push('+50 $ droits commerciaux à prévoir');
+    forfait = 'Équipe — Match';
+    prix = '295 $';
+    details = ['Couverture complète du match', "Photos d'équipe en action", 'Galerie privée en ligne', 'Téléchargement en haute résolution'];
+    if (attente === 'Usage commercial / commanditaires') details.push('+100 $ licence commerciale');
   } else {
-    if (temps === 'Peu de temps — remplaçant') {
+    if (temps === 'Peu de temps — remplaçant' || temps === 'Environ la moitié du match') {
       titre = 'On est compatibles!';
-      forfait = 'Individuel Mini';
-      prix = '50 $';
-      details = ['Temps de jeu limité couvert', '5–8 photos éditées livrées', "Photos d'action + portrait"];
-    } else if (temps === "Environ la moitié du match") {
-      titre = "C'est un match parfait!";
-      forfait = 'Individuel Demi-match';
-      prix = '75 $';
-      details = ['~Mi-temps de jeu couvert', '10–12 photos éditées livrées', "Photos d'action ciblées"];
+      forfait = 'Athlète — Express';
+      prix = '95 $';
+      details = ["Jusqu'à 45 minutes de couverture", "Suivi de l'athlète pendant la période couverte", 'Galerie privée en ligne', 'Téléchargement en haute résolution'];
     } else {
       titre = "C'est un match parfait!";
-      forfait = 'Individuel Match Complet';
-      prix = '100 $';
-      details = ['Match complet couvert', '15–20 photos éditées livrées', "Photos d'action + portrait en début de match"];
+      forfait = 'Athlète — Signature';
+      prix = '175 $';
+      details = ['Couverture complète du match', 'Échauffement (si possible)', 'Galerie privée en ligne', 'Téléchargement en haute résolution'];
     }
-    if (attente === 'Usage commercial / commanditaires') details.push('+50 $ droits commerciaux à prévoir');
+    if (attente === 'Usage commercial / commanditaires') details.push('Contactez-moi pour une soumission');
   }
 
   document.getElementById('resultTitle').textContent = titre;
